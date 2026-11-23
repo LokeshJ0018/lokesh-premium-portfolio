@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>Lokesh Jayachandran | Aspiring Software Engineer & AI Enthusiast</title>
+    <meta name="title" content="Lokesh Jayachandran | Aspiring Software Engineer & AI Enthusiast">
+    <meta name="description" content="Portfolio of Lokesh Jayachandran — Computer Science and Engineering student passionate about software development, Java programming, problem solving, and Artificial Intelligence.">
+    <meta name="keywords" content="Lokesh Jayachandran, Software Engineer, Portfolio, Java, AI, Machine Learning, Computer Science, Dhanalakshmi College of Engineering, Chennai">
+    <meta name="author" content="Lokesh Jayachandran">
+    <meta name="theme-color" content="#050507">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/LokeshJ0018">
+    <meta property="og:title" content="Lokesh Jayachandran | Aspiring Software Engineer & AI Enthusiast">
+    <meta property="og:description" content="Engineering Ideas Into Digital Experiences. Explore projects, technical skills, and research interests of Lokesh Jayachandran.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data (JSON-LD) for Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Lokesh Jayachandran",
+      "jobTitle": "Aspiring Software Engineer",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Dhanalakshmi College of Engineering, Tambaram, Chennai"
+      },
+      "knowsAbout": ["Java", "Data Structures and Algorithms", "Artificial Intelligence", "Machine Learning", "Web Development", "SQL"],
+      "sameAs": [
+        "https://github.com/LokeshJ0018",
+        "https://www.linkedin.com/in/lokesh-j-5942a0298/"
+      ]
+    }
+    </script>
+</head>
+<body class="bg-obsidian text-platinum antialiased selection:bg-gold-500 selection:text-black">
+
+    <!-- Custom Cursor Canvas / Elements -->
+    <div class="custom-cursor-dot" id="cursorDot" aria-hidden="true"></div>
+    <div class="custom-cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container" aria-hidden="true">
+        <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    </div>
+
+    <!-- Ambient Lighting Backdrop -->
+    <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+    <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+
+    <!-- Luxury Header / Navigation -->
+    <header class="luxury-navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Brand Monogram -->
+            <a href="#hero" class="brand-logo" aria-label="Lokesh Jayachandran Home">
+                <span class="monogram-box">
+                    <span class="monogram-text">LJ</span>
+                </span>
+                <span class="brand-text">
+                    <span class="brand-name">LOKESH</span>
+                    <span class="brand-sub">ENGINEERING</span>
+                </span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="nav-links" aria-label="Main Navigation">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#ai-focus" class="nav-link">AI Focus</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- Nav Actions -->
+            <div class="nav-actions">
+                <a href="mailto:lokeshjai2005@gmail.com" class="btn-luxury-sm" aria-label="Send email to Lokesh">
+                    <span class="btn-text">Connect</span>
+                    <span class="btn-shine"></span>
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-menu-drawer" id="mobileDrawer" aria-hidden="true">
+        <div class="drawer-header">
+            <span class="monogram-box">
+                <span class="monogram-text">LJ</span>
+            </span>
+            <button class="drawer-close" id="drawerClose" aria-label="Close menu">&times;</button>
+        </div>
+        <nav class="mobile-nav-links" aria-label="Mobile Navigation">
+            <a href="#hero" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About Me</a>
+            <a href="#skills" class="mobile-nav-link">Technical Skills</a>
+            <a href="#projects" class="mobile-nav-link">Featured Projects</a>
+            <a href="#education" class="mobile-nav-link">Academic Journey</a>
+            <a href="#ai-focus" class="mobile-nav-link">AI & ML Focus</a>
+            <a href="#contact" class="mobile-nav-link">Get In Touch</a>
+        </nav>
+        <div class="drawer-footer">
+            <p class="drawer-status">✦ Dhanalakshmi College of Engineering</p>
+            <div class="drawer-socials">
+                <a href="https://github.com/LokeshJ0018" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                    <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/lokesh-j-5942a0298/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                    <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="mailto:lokeshjai2005@gmail.com" aria-label="Email Lokesh">
+                    <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="mainContent">
+
+        <!-- HERO SECTION: CINEMATIC VIDEO BACKGROUND -->
+        <section id="hero" class="hero-section">
+            <!-- Fullscreen Video Container -->
+            <div class="hero-video-wrapper" aria-hidden="true">
+                <video 
+                    id="heroVideo"
+                    class="hero-video" 
+                    autoplay 
+                    muted 
+                    loop 
+                    playsinline
+                    preload="auto"
+                >
+                    <source src="assets/hero-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <!-- Multi-layer cinematic overlays for contrast & legibility -->
+                <div class="hero-vignette-overlay"></div>
+                <div class="hero-gradient-overlay"></div>
+                <div class="hero-mesh-grid"></div>
+            </div>
+
+            <!-- Video Controls Bar (Playback & Mute indicators) -->
+            <div class="video-control-pill" aria-label="Cinematic video controls">
+                <button id="videoPlayToggle" class="video-btn" aria-label="Pause or play background video">
+                    <span class="video-icon" id="playIcon">⏸</span>
+                    <span class="video-label" id="playLabel">Cinematic Ambience</span>
+                </button>
+            </div>
+
+            <!-- Hero Foreground Content -->
+            <div class="hero-content-container">
+                <!-- Status Badge -->
+                <div class="hero-badge reveal-item" data-reveal="fade-down">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">Computer Science & Engineering • 7th Semester</span>
+                </div>
+
+                <!-- Main Display Name -->
+                <h1 class="hero-title reveal-item" data-reveal="zoom-in">
+                    <span class="hero-title-main">LOKESH</span>
+                    <span class="hero-title-accent">JAYACHANDRAN</span>
+                </h1>
+
+                <!-- Cinematic Headline -->
+                <div class="hero-headline-wrap reveal-item" data-reveal="fade-up" data-delay="150">
+                    <p class="hero-headline">“Engineering Ideas Into Digital Experiences.”</p>
+                </div>
+
+                <!-- Verified Subheading -->
+                <p class="hero-subheading reveal-item" data-reveal="fade-up" data-delay="300">
+                    Computer Science Student <span class="divider">|</span> Aspiring Software Engineer <span class="divider">|</span> AI Enthusiast
+                </p>
+
+                <!-- Hero Call-to-Actions -->
+                <div class="hero-cta-group reveal-item" data-reveal="fade-up" data-delay="450">
+                    <a href="#projects" class="btn-luxury-primary">
+                        <span class="btn-glow"></span>
+                        <span class="btn-content">
+                            <span>Explore Projects</span>
+                            <svg class="cta-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="#about" class="btn-luxury-outline">
+                        <span class="btn-content">About My Vision</span>
+                    </a>
+                </div>
+
+                <!-- Online Presence Quick Links -->
+                <div class="hero-social-strip reveal-item" data-reveal="fade-up" data-delay="600">
+                    <span class="strip-label">Direct Connect:</span>
+                    <a href="https://github.com/LokeshJ0018" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="GitHub Profile">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lokesh-j-5942a0298/" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="LinkedIn Profile">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="mailto:lokeshjai2005@gmail.com" class="social-chip" aria-label="Email Address">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Scroll Down Indicator -->
+            <a href="#about" class="scroll-down-hint" aria-label="Scroll down to About section">
+                <span class="scroll-mouse">
+                    <span class="scroll-wheel"></span>
+                </span>
+                <span class="scroll-text">DISCOVER</span>
+            </a>
+        </section>
+
+        <!-- ABOUT ME SECTION -->
+        <section id="about" class="section-container about-section">
+            <div class="section-header reveal-item" data-reveal="fade-up">
+                <span class="section-eyebrow">✦ PHILOSOPHY & IDENTITY</span>
+                <h2 class="section-heading">About Me</h2>
+                <div class="gold-accent-line"></div>
+            </div>
+
+            <div class="about-grid">
+                <!-- Left: Luxury Profile Bio Card -->
+                <div class="about-card-primary glass-panel reveal-item" data-reveal="fade-right">
+                    <div class="card-glow-edge"></div>
+                    <div class="profile-header">
+                        <div class="profile-avatar-frame">
+                            <div class="avatar-inner">
+                                <span class="avatar-monogram">LJ</span>
+                            </div>
+                        </div>
+                        <div class="profile-title-block">
+                            <h3 class="profile-name">Lokesh Jayachandran</h3>
+                            <p class="profile-role">Aspiring Software Engineer</p>
+                            <span class="profile-location">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                                Chennai, Tamil Nadu, India
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Verified Professional Introduction -->
+                    <div class="bio-content-body">
+                        <p class="bio-quote">
+                            “I am a Computer Science and Engineering student passionate about software development, problem-solving, Java programming and Artificial Intelligence. I enjoy building practical technology projects and continuously improving my technical skills. My goal is to become a skilled software engineer and contribute to meaningful technology innovations.”
+                        </p>
+                    </div>
+
+                    <!-- Quick Verified Academic Badges -->
+                    <div class="academic-pills">
+                        <div class="pill-item">
+                            <span class="pill-label">Degree</span>
+                            <span class="pill-value">B.E. Computer Science & Engineering</span>
+                        </div>
+                        <div class="pill-item">
+                            <span class="pill-label">Institution</span>
+                            <span class="pill-value">Dhanalakshmi College of Engineering</span>
+                        </div>
+                        <div class="pill-item">
+                            <span class="pill-label">Current Status</span>
+                            <span class="pill-value">7th Semester Active</span>
+                        </div>
+                        <div class="pill-item">
+                            <span class="pill-label">Graduation</span>
+                            <span class="pill-value">Expected May 2027</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Pillars of Engineering Rigor -->
+                <div class="about-pillars reveal-item" data-reveal="fade-left">
+                    <div class="pillar-card glass-panel">
+                        <div class="pillar-icon-box">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <div class="pillar-info">
+                            <h4 class="pillar-title">Solid Software Development</h4>
+                            <p class="pillar-desc">
+                                Dedicated focus on Java programming, object-oriented design patterns, modular architecture, and writing clean, maintainable, production-ready code.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pillar-card glass-panel">
+                        <div class="pillar-icon-box">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <div class="pillar-info">
+                            <h4 class="pillar-title">Algorithmic Problem Solving</h4>
+                            <p class="pillar-desc">
+                                Deep grounding in Data Structures and Algorithms to analyze computational complexity, optimize system efficiency, and resolve intricate logic hurdles.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pillar-card glass-panel">
+                        <div class="pillar-icon-box">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 16v-4"></path>
+                                <path d="M12 8h.01"></path>
+                            </svg>
+                        </div>
+                        <div class="pillar-info">
+                            <h4 class="pillar-title">Applied Artificial Intelligence</h4>
+                            <p class="pillar-desc">
+                                Actively researching and applying Machine Learning, Retrieval-Augmented Generation (RAG), and data-driven systems to create intelligent, impact-oriented software.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECHNICAL SKILLS SECTION -->
+        <section id="skills" class="section-container skills-section">
+            <div class="section-header reveal-item" data-reveal="fade-up">
+                <span class="section-eyebrow">✦ TECHNICAL PROFICIENCIES</span>
+                <h2 class="section-heading">Skills & Domains</h2>
+                <div class="gold-accent-line"></div>
+                <p class="section-subtext">Curated engineering capabilities grounded in core computer science, web standards, and intelligent architectures.</p>
+            </div>
+
+            <!-- Filter Categories -->
+            <div class="skills-filter-tabs reveal-item" data-reveal="fade-up" data-delay="100">
+                <button class="filter-tab active" data-filter="all">All Domains</button>
+                <button class="filter-tab" data-filter="programming">Programming</button>
+                <button class="filter-tab" data-filter="web">Web Development</button>
+                <button class="filter-tab" data-filter="database">Database</button>
+                <button class="filter-tab" data-filter="ai">AI & Research</button>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="skills-grid" id="skillsGrid">
+                <!-- Skill 1: Java -->
+                <div class="skill-card glass-panel" data-category="programming" data-reveal="zoom-in">
+                    <div class="skill-card-inner">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">
+                                <span class="skill-icon-text">☕</span>
+                            </div>
+                            <span class="skill-domain-tag">Programming</span>
+                        </div>
+                        <h3 class="skill-name">Java</h3>
+                        <p class="skill-detail">Object-Oriented Programming, Class Hierarchies, Memory Management, and Robust Application Development.</p>
+                        <div class="skill-badge-row">
+                            <span class="skill-chip">OOP</span>
+                            <span class="skill-chip">Core Java</span>
+                            <span class="skill-chip">Clean Code</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 2: Data Structures and Algorithms -->
+                <div class="skill-card glass-panel" data-category="programming" data-reveal="zoom-in" data-delay="100">
+                    <div class="skill-card-inner">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">
+                                <span class="skill-icon-text">⚡</span>
+                            </div>
+                            <span class="skill-domain-tag">Core CS</span>
+                        </div>
+                        <h3 class="skill-name">Data Structures &amp; Algorithms</h3>
+                        <p class="skill-detail">Arrays, Linked Lists, Trees, Graphs, Sorting, Searching, and Asymptotic Complexity Optimization (Big-O).</p>
+                        <div class="skill-badge-row">
+                            <span class="skill-chip">DSA</span>
+                            <span class="skill-chip">Problem Solving</span>
+                            <span class="skill-chip">Optimization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 3: HTML5 -->
+                <div class="skill-card glass-panel" data-category="web" data-reveal="zoom-in" data-delay="200">
+                    <div class="skill-card-inner">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">
+                                <span class="skill-icon-text">🌐</span>
+                            </div>
+                            <span class="skill-domain-tag">Web Development</span>
+                        </div>
+                        <h3 class="skill-name">HTML5</h3>
+                        <p class="skill-detail">Semantic Document Layouts, Accessibility (a11y), Modern Media Embedding, and Structured SEO Architecture.</p>
+                        <div class="skill-badge-row">
+                            <span class="skill-chip">Semantic</span>
+                            <span class="skill-chip">Accessible</span>
+                            <span class="skill-chip">SEO Ready</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 4: CSS3 -->
+                <div class="skill-card glass-panel" data-category="web" data-reveal="zoom-in" data-delay="300">
+                    <div class="skill-card-inner">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">
+                                <span class="skill-icon-text">✨</span>
+                            </div>
+                            <span class="skill-domain-tag">Web Development</span>
+                        </div>
+                        <h3 class="skill-name">CSS3</h3>
+                        <p class="skill-detail">Modern Grid, Flexbox, Fluid Typography, Glassmorphism, Keyframe Animations, and Adaptive Responsive Media Queries.</p>
+                        <div class="skill-badge-row">
+                            <span class="skill-chip">Responsive</span>
+                            <span class="skill-chip">Glassmorphism</span>
+                            <span class="skill-chip">Transitions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 5: JavaScript -->
+                <div class="skill-card glass-panel" data-category="web" data-reveal="zoom-in" data-delay="400">
+                    <div class="skill-card-inner">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">
+                                <span class="skill-icon-text">📜</span>
+                            </div>
+                            <span class="skill-domain-tag">Web Development</span>
+                        </div>
+                        <h3 class="skill-name">JavaScript</h3>
+                        <p class="skill-detail">DOM Manipulation, Event Handling, Asynchronous Programming, ES6+ Architecture, and Interactive Web Applications.</p>
+                        <div class="skill-badge-row">
+                            <span class="skill-chip">ES6+</span>
+                            <span class="skill-chip">Async / Await</span>
+                            <span class="skill-chip">Dynamic DOM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 6: SQL -->
+                <div class="skill-card glass-panel" data-category="database" data-reveal="zoom-in" data-delay="500">
+                    <div class="skill-card-inner">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">
+                                <span class="skill-icon-text">🗄️</span>
+                            </div>
+                            <span class="skill-domain-tag">Database</span>
+                        </div>
+                        <h3 class="skill-name">SQL</h3>
+                        <p class="skill-detail">Relational Schema Modeling, Query Writing, Joins, Aggregations, Data Normalization, and Integrity Constraints.</p>
+                        <div class="skill-badge-row">
+                            <span class="skill-chip">RDBMS</span>
+                            <span class="skill-chip">Queries &amp; Joins</span>
+                            <span class="skill-chip">Data Modeling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 7: Artificial Intelligence -->
+                <div class="skill-card glass-panel" data-category="ai" data-reveal="zoom-in" data-delay="600">
+                    <div class="skill-card-inner">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">
+                                <span class="skill-icon-text">🧠</span>
+                            </div>
+                            <span class="skill-domain-tag">Research Interest</span>
+                        </div>
+                        <h3 class="skill-name">Artificial Intelligence</h3>
+                        <p class="skill-detail">Intelligent Agent Design, Search Strategies, Knowledge Representation, and Cognitive Computational Paradigms.</p>
+                        <div class="skill-badge-row">
+                            <span class="skill-chip">AI Systems</span>
+                            <span class="skill-chip">Heuristics</span>
+                            <span class="skill-chip">Reasoning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 8: Machine Learning -->
+                <div class="skill-card glass-panel" data-category="ai" data-reveal="zoom-in" data-delay="700">
+                    <div class="skill-card-inner">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">
+                                <span class="skill-icon-text">📊</span>
+                            </div>
+                            <span class="skill-domain-tag">Research Interest</span>
+                        </div>
+                        <h3 class="skill-name">Machine Learning</h3>
+                        <p class="skill-detail">Supervised &amp; Unsupervised Learning, Feature Engineering, Predictive Modeling, and Evaluation Metrics.</p>
+                        <div class="skill-badge-row">
+                            <span class="skill-chip">Predictive Models</span>
+                            <span class="skill-chip">Evaluation</span>
+                            <span class="skill-chip">Pattern Mining</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 9: AI-powered Applications -->
+                <div class="skill-card glass-panel" data-category="ai" data-reveal="zoom-in" data-delay="800">
+                    <div class="skill-card-inner">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">
+                                <span class="skill-icon-text">🔮</span>
+                            </div>
+                            <span class="skill-domain-tag">Applied Innovation</span>
+                        </div>
+                        <h3 class="skill-name">AI-Powered Applications</h3>
+                        <p class="skill-detail">Retrieval-Augmented Generation (RAG), Vector Embeddings, LLM Orchestration, and Interactive Analytical Dashboards.</p>
+                        <div class="skill-badge-row">
+                            <span class="skill-chip">RAG Architectures</span>
+                            <span class="skill-chip">Vector Search</span>
+                            <span class="skill-chip">Intelligent UX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED PROJECTS SECTION -->
+        <section id="projects" class="section-container projects-section">
+            <div class="section-header reveal-item" data-reveal="fade-up">
+                <span class="section-eyebrow">✦ SELECTED ENGINEERING WORKS</span>
+                <h2 class="section-heading">Featured Projects</h2>
+                <div class="gold-accent-line"></div>
+                <p class="section-subtext">Practical implementations across Machine Learning, Retrieval-Augmented Generation, IoT Hardware, and Software Systems.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- PROJECT 01: ClimateGuard-AI -->
+                <article class="project-card glass-panel reveal-item" data-reveal="fade-up">
+                    <div class="project-card-banner">
+                        <div class="project-number-badge">PROJECT 01</div>
+                        <span class="project-domain-pill">AI &amp; Machine Learning</span>
+                    </div>
+
+                    <div class="project-card-content">
+                        <h3 class="project-title">ClimateGuard-AI</h3>
+                        <p class="project-description">
+                            An AI-powered climate and environmental risk prediction project using weather data and machine learning to analyze patterns and forecast critical environmental hazards.
+                        </p>
+
+                        <div class="project-features-list">
+                            <h4 class="features-title">Core Implementation Highlights:</h4>
+                            <ul>
+                                <li>
+                                    <span class="bullet-gold">✦</span>
+                                    <span><strong>Weather Data Processing:</strong> Ingestion, cleaning, and normalization of multidimensional atmospheric data streams.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-gold">✦</span>
+                                    <span><strong>Environmental Fire Risk Prediction:</strong> Machine learning algorithms trained to predict wildfire vulnerability indices.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-gold">✦</span>
+                                    <span><strong>Interactive Streamlit Dashboard:</strong> Real-time visual interface facilitating parameter exploration and geospatial insight.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-gold">✦</span>
+                                    <span><strong>Model Evaluation &amp; Visualization:</strong> Performance metrics, feature importances, and diagnostic risk plots.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Weather Data Processing</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Model Evaluation</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://github.com/LokeshJ0018" target="_blank" rel="noopener noreferrer" class="btn-project-primary" aria-label="View ClimateGuard-AI on GitHub">
+                                <span>Source on GitHub</span>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <button class="btn-project-outline open-modal-btn" data-project="climateguard">
+                                <span>Architecture Breakdown</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 02: DocuMind AI -->
+                <article class="project-card glass-panel reveal-item" data-reveal="fade-up" data-delay="150">
+                    <div class="project-card-banner">
+                        <div class="project-number-badge">PROJECT 02</div>
+                        <span class="project-domain-pill">GenAI &amp; RAG</span>
+                    </div>
+
+                    <div class="project-card-content">
+                        <h3 class="project-title">DocuMind AI</h3>
+                        <p class="project-description">
+                            An AI-powered document question-answering application leveraging Retrieval-Augmented Generation (RAG) to deliver contextually grounded, accurate responses from complex PDF knowledge bases.
+                        </p>
+
+                        <div class="project-features-list">
+                            <h4 class="features-title">Core Implementation Highlights:</h4>
+                            <ul>
+                                <li>
+                                    <span class="bullet-gold">✦</span>
+                                    <span><strong>PDF Processing Pipeline:</strong> Text extraction, semantic chunking, and metadata parsing from multi-page documents.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-gold">✦</span>
+                                    <span><strong>Vector Embeddings in ChromaDB:</strong> High-dimensional vector indexing enabling rapid semantic similarity search.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-gold">✦</span>
+                                    <span><strong>Gemini API Synthesis:</strong> State-of-the-art language generation grounded strictly within retrieved document context.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-gold">✦</span>
+                                    <span><strong>Contextual Question Answering:</strong> Eliminates hallucinations by providing precise document-cited answers.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Gemini API</span>
+                            <span class="tech-tag">ChromaDB</span>
+                            <span class="tech-tag">PDF Processing</span>
+                            <span class="tech-tag">RAG Architecture</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://github.com/LokeshJ0018" target="_blank" rel="noopener noreferrer" class="btn-project-primary" aria-label="View DocuMind AI on GitHub">
+                                <span>Source on GitHub</span>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <button class="btn-project-outline open-modal-btn" data-project="documind">
+                                <span>Architecture Breakdown</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 03: IoT Smart Home Water Leak Detection and Mobile Alert System -->
+                <article class="project-card glass-panel reveal-item" data-reveal="fade-up" data-delay="300">
+                    <div class="project-card-banner">
+                        <div class="project-number-badge">PROJECT 03</div>
+                        <span class="project-domain-pill">IoT &amp; Embedded Systems</span>
+                    </div>
+
+                    <div class="project-card-content">
+                        <h3 class="project-title">IoT Smart Home Water Leak Detection</h3>
+                        <p class="project-description">
+                            An IoT-based smart home solution designed to continuously detect water leakage using moisture sensors and instantly dispatch automated mobile alerts to prevent catastrophic structural damage.
+                        </p>
+
+                        <div class="project-features-list">
+                            <h4 class="features-title">Core Implementation Highlights:</h4>
+                            <ul>
+                                <li>
+                                    <span class="bullet-gold">✦</span>
+                                    <span><strong>Moisture Sensing Array:</strong> Continuous physical threshold monitoring across vulnerable smart home water points.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-gold">✦</span>
+                                    <span><strong>Automated Event Detection:</strong> Instantaneous algorithmic detection of anomalous liquid presence.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-gold">✦</span>
+                                    <span><strong>Real-Time Mobile Alerts:</strong> Immediate push notification dispatch to user smartphones for swift intervention.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-gold">✦</span>
+                                    <span><strong>Proactive Damage Prevention:</strong> Mitigates expensive property loss through low-latency hardware triggers.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">IoT Sensors</span>
+                            <span class="tech-tag">Moisture Detection</span>
+                            <span class="tech-tag">Mobile Alerts</span>
+                            <span class="tech-tag">Hardware Automation</span>
+                            <span class="tech-tag">Embedded Logic</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://github.com/LokeshJ0018" target="_blank" rel="noopener noreferrer" class="btn-project-primary" aria-label="View IoT System on GitHub">
+                                <span>Source on GitHub</span>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <button class="btn-project-outline open-modal-btn" data-project="waterleak">
+                                <span>Architecture Breakdown</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 04: Habit Tracker -->
+                <article class="project-card glass-panel reveal-item" data-reveal="fade-up" data-delay="450">
+                    <div class="project-card-banner">
+                        <div class="project-number-badge">PROJECT 04</div>
+                        <span class="project-domain-pill">Productivity &amp; Web</span>
+                    </div>
+
+                    <div class="project-card-content">
+                        <h3 class="project-title">Habit Tracker</h3>
+                        <p class="project-description">
+                            A simple, elegant productivity application designed to help users systematically monitor recurring habits, foster self-discipline, and maintain day-to-day consistency.
+                        </p>
+
+                        <div class="project-features-list">
+                            <h4 class="features-title">Core Implementation Highlights:</h4>
+                            <ul>
+                                <li>
+                                    <span class="bullet-gold">✦</span>
+                                    <span><strong>Routine Consistency Tracking:</strong> Interactive logging of daily habits with clear visual accountability indicators.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-gold">✦</span>
+                                    <span><strong>Clean Minimalist UI:</strong> Distraction-free user experience geared towards friction-free habit completion.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-gold">✦</span>
+                                    <span><strong>Progress Visualization:</strong> Visual cues to observe trends, streaks, and personal accountability milestones.</span>
+                                </li>
+                                <li>
+                                    <span class="bullet-gold">✦</span>
+                                    <span><strong>Persistent State:</strong> Reliable tracking of user routine records over continuous cycles.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML5 / CSS3</span>
+                            <span class="tech-tag">Productivity Logic</span>
+                            <span class="tech-tag">State Management</span>
+                            <span class="tech-tag">UI/UX Design</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://github.com/LokeshJ0018" target="_blank" rel="noopener noreferrer" class="btn-project-primary" aria-label="View Habit Tracker on GitHub">
+                                <span>Source on GitHub</span>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <button class="btn-project-outline open-modal-btn" data-project="habittracker">
+                                <span>Architecture Breakdown</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- EDUCATION & ACADEMIC JOURNEY SECTION -->
+        <section id="education" class="section-container education-section">
+            <div class="section-header reveal-item" data-reveal="fade-up">
+                <span class="section-eyebrow">✦ ACADEMIC FOUNDATION</span>
+                <h2 class="section-heading">Education &amp; Journey</h2>
+                <div class="gold-accent-line"></div>
+                <p class="section-subtext">Formal collegiate grounding in Computer Science and Engineering principles at Dhanalakshmi College of Engineering.</p>
+            </div>
+
+            <div class="education-timeline-wrap reveal-item" data-reveal="fade-up" data-delay="100">
+                <div class="timeline-track"></div>
+
+                <!-- Degree Card -->
+                <div class="timeline-node">
+                    <div class="node-indicator">
+                        <span class="node-gold-ring"></span>
+                    </div>
+
+                    <div class="timeline-content glass-panel">
+                        <div class="node-header">
+                            <span class="degree-badge">B.E. DEGREE PROGRAM</span>
+                            <span class="grad-badge">Expected Graduation: May 2027</span>
+                        </div>
+
+                        <h3 class="education-degree">Bachelor of Engineering (B.E.) in Computer Science and Engineering</h3>
+                        <h4 class="education-college">Dhanalakshmi College of Engineering</h4>
+                        <p class="education-location">
+                            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            Tambaram, Chennai, Tamil Nadu
+                        </p>
+
+                        <div class="status-callout">
+                            <div class="callout-left">
+                                <span class="status-indicator-pulse"></span>
+                                <span class="status-text">Current Academic Standing:</span>
+                            </div>
+                            <span class="status-highlight">7th Semester Active</span>
+                        </div>
+
+                        <div class="curriculum-highlights">
+                            <h5 class="curriculum-title">Core Academic Curricular Focus:</h5>
+                            <div class="curriculum-tags">
+                                <span class="curriculum-tag">Data Structures &amp; Algorithms</span>
+                                <span class="curriculum-tag">Object-Oriented Programming (Java)</span>
+                                <span class="curriculum-tag">Database Management Systems (SQL)</span>
+                                <span class="curriculum-tag">Artificial Intelligence Foundations</span>
+                                <span class="curriculum-tag">Machine Learning Paradigms</span>
+                                <span class="curriculum-tag">Software Engineering Principles</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI & MACHINE LEARNING RESEARCH FOCUS SECTION -->
+        <section id="ai-focus" class="section-container ai-focus-section">
+            <div class="section-header reveal-item" data-reveal="fade-up">
+                <span class="section-eyebrow">✦ RESEARCH DOMAIN</span>
+                <h2 class="section-heading">AI &amp; Machine Learning Focus</h2>
+                <div class="gold-accent-line"></div>
+                <p class="section-subtext">Exploring computational intelligence, predictive analytics, and applied neural frameworks to tackle real-world challenges.</p>
+            </div>
+
+            <div class="ai-cards-grid">
+                <!-- AI Card 1 -->
+                <div class="ai-card glass-panel reveal-item" data-reveal="fade-up">
+                    <div class="ai-card-glow"></div>
+                    <div class="ai-card-icon-box">
+                        <span class="ai-icon">🔬</span>
+                    </div>
+                    <h3 class="ai-card-title">Artificial Intelligence</h3>
+                    <p class="ai-card-text">
+                        Investigating automated reasoning, heuristic search mechanisms, and knowledge representations that empower software systems to act contextually and adaptively.
+                    </p>
+                    <div class="ai-card-features">
+                        <span class="ai-pill">Algorithmic Reasoning</span>
+                        <span class="ai-pill">Intelligent Automation</span>
+                    </div>
+                </div>
+
+                <!-- AI Card 2 -->
+                <div class="ai-card glass-panel reveal-item" data-reveal="fade-up" data-delay="150">
+                    <div class="ai-card-glow"></div>
+                    <div class="ai-card-icon-box">
+                        <span class="ai-icon">📈</span>
+                    </div>
+                    <h3 class="ai-card-title">Machine Learning</h3>
+                    <p class="ai-card-text">
+                        Developing predictive data-driven models through disciplined feature engineering, cross-validation, and statistical modeling — demonstrated in projects like ClimateGuard-AI.
+                    </p>
+                    <div class="ai-card-features">
+                        <span class="ai-pill">Predictive Modeling</span>
+                        <span class="ai-pill">Data Pipelines</span>
+                    </div>
+                </div>
+
+                <!-- AI Card 3 -->
+                <div class="ai-card glass-panel reveal-item" data-reveal="fade-up" data-delay="300">
+                    <div class="ai-card-glow"></div>
+                    <div class="ai-card-icon-box">
+                        <span class="ai-icon">⚡</span>
+                    </div>
+                    <h3 class="ai-card-title">AI-Powered Applications</h3>
+                    <p class="ai-card-text">
+                        Bridging high-level generative AI tools with pragmatic software architectures, such as Retrieval-Augmented Generation (RAG) with vector databases and the Gemini API in DocuMind AI.
+                    </p>
+                    <div class="ai-card-features">
+                        <span class="ai-pill">RAG &amp; Vector DBs</span>
+                        <span class="ai-pill">LLM Integration</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section-container contact-section">
+            <div class="section-header reveal-item" data-reveal="fade-up">
+                <span class="section-eyebrow">✦ INITIATE CONVERSATION</span>
+                <h2 class="section-heading">Connect With Me</h2>
+                <div class="gold-accent-line"></div>
+                <p class="section-subtext">Open to software engineering discussions, innovative opportunities, and technical collaborations.</p>
+            </div>
+
+            <div class="contact-card-container">
+                <div class="contact-card glass-panel reveal-item" data-reveal="zoom-in">
+                    <div class="contact-card-inner">
+                        <div class="contact-info-col">
+                            <span class="contact-badge">GET IN TOUCH</span>
+                            <h3 class="contact-hero-title">Let’s Engineer Something Meaningful.</h3>
+                            <p class="contact-hero-desc">
+                                Whether you're discussing software engineering opportunities, algorithmic challenges, or innovative AI applications, feel free to reach out directly.
+                            </p>
+
+                            <!-- Direct Email Display & Copy Button -->
+                            <div class="email-direct-box">
+                                <div class="email-display">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                    </svg>
+                                    <span id="targetEmailText">lokeshjai2005@gmail.com</span>
+                                </div>
+                                <button class="btn-copy-email" id="copyEmailBtn" aria-label="Copy email address to clipboard">
+                                    <span class="copy-icon">📋</span>
+                                    <span class="copy-text" id="copyBtnText">Copy Email</span>
+                                </button>
+                            </div>
+
+                            <!-- Verified Social Channels -->
+                            <div class="contact-social-row">
+                                <a href="https://github.com/LokeshJ0018" target="_blank" rel="noopener noreferrer" class="contact-social-btn" aria-label="Lokesh's GitHub">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                    </svg>
+                                    <span>GitHub Profile</span>
+                                </a>
+
+                                <a href="https://www.linkedin.com/in/lokesh-j-5942a0298/" target="_blank" rel="noopener noreferrer" class="contact-social-btn" aria-label="Lokesh's LinkedIn">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                    </svg>
+                                    <span>LinkedIn Profile</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Direct Message Composer -->
+                        <div class="contact-form-col">
+                            <form id="contactForm" class="contact-form" onsubmit="return false;">
+                                <div class="form-group">
+                                    <label for="senderName" class="form-label">Your Name</label>
+                                    <input type="text" id="senderName" class="form-input" placeholder="e.g. Alex Henderson" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="senderEmail" class="form-label">Your Email</label>
+                                    <input type="email" id="senderEmail" class="form-input" placeholder="e.g. alex@company.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="senderSubject" class="form-label">Subject</label>
+                                    <input type="text" id="senderSubject" class="form-input" placeholder="Engineering Opportunity / Collaboration" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="senderMessage" class="form-label">Message</label>
+                                    <textarea id="senderMessage" class="form-input form-textarea" rows="4" placeholder="Hello Lokesh, I'd like to discuss..." required></textarea>
+                                </div>
+                                <button type="button" id="sendEmailBtn" class="btn-luxury-primary w-full">
+                                    <span class="btn-glow"></span>
+                                    <span class="btn-content">
+                                        <span>Send via Email Client</span>
+                                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <p class="form-disclaimer">
+                                    * Opens your default mail client with prefilled fields to send directly to <strong>lokeshjai2005@gmail.com</strong>.
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PROJECT DETAIL MODAL DIALOG -->
+    <div id="projectModal" class="luxury-modal" aria-hidden="true" role="dialog" aria-labelledby="modalProjectTitle">
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+        <div class="modal-dialog-panel glass-panel">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close project modal">&times;</button>
+            <div class="modal-body" id="modalBodyContent">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="luxuryToast" class="luxury-toast" role="status" aria-live="polite">
+        <span class="toast-icon">✓</span>
+        <span class="toast-message" id="toastMessage">Email copied to clipboard!</span>
+    </div>
+
+    <!-- LUXURY FOOTER -->
+    <footer class="luxury-footer">
+        <div class="footer-container">
+            <div class="footer-top-row">
+                <div class="footer-brand">
+                    <span class="monogram-box">
+                        <span class="monogram-text">LJ</span>
+                    </span>
+                    <span class="footer-name">LOKESH JAYACHANDRAN</span>
+                </div>
+
+                <div class="footer-quote">
+                    <p>“Engineering Ideas Into Digital Experiences.”</p>
+                </div>
+
+                <div class="footer-social-links">
+                    <a href="https://github.com/LokeshJ0018" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/lokesh-j-5942a0298/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="mailto:lokeshjai2005@gmail.com" aria-label="Email">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom-row">
+                <p class="footer-copyright">
+                    &copy; <span id="currentYear">2027</span> Lokesh Jayachandran. All Rights Reserved.
+                </p>
+                <p class="footer-tagline">
+                    Aspiring Software Engineer &bull; Dhanalakshmi College of Engineering
+                </p>
+                <a href="#hero" class="back-to-top-btn" aria-label="Scroll back to top">
+                    <span>Back to Top</span>
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 15l-6-6-6 6"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle -->
+    <script src="script.js"></script>
+</body>
+</html>
